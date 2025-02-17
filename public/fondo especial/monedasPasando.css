@@ -1,0 +1,29 @@
+.moving-gif {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    animation: moveGif 10s linear infinite;
+    width: 30px; 
+    height: 30px;
+}
+
+@keyframes moveGif {
+    from {
+        left: -200px;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes fadeIn { 
+    from { 
+        opacity: 0; 
+    }
+
+    to { 
+        opacity: 1; 
+    }
+}

@@ -1,0 +1,117 @@
+<style>
+    img{
+        border: 1px solid black;
+    }
+    
+</style>
+
+<div class="container">
+
+    <!-- Cartas del crupier -->
+    <h2>Crupier</h2>
+    <div class="container">
+        <div id="filas cartas crupier" class="row">
+            
+            <div id="crupier carta 1" class="col-auto">
+                <img id="crupier imagen carta 1" src="/images/Juegos/Blackjack/Reverso.png" class="img-fluid">
+                <p class="text-center">Valor: <span id="crupier valor carta 1"></span></p>
+            </div>
+            
+            <div id="crupier carta 2" class="col-auto">
+                <img id="crupier imagen carta 2" src="/images/Juegos/Blackjack/Reverso.png" class="img-fluid">
+                <p class="text-center">Valor: <span id="crupier valor carta 2"></span></p>
+            </div>
+
+        </div>
+    </div>
+    <p>Puntos: <span id="crupier puntos">0</span></p>
+
+    <!-- Cartas del jugador -->
+    <h2>Tu</h2>
+    <div class="container">
+        <div id="fila cartas jugador" class="row">
+            
+            <div id="jugador carta 1" class="col-auto">
+                <img id="jugador imagen carta 1" src="/images/Juegos/Blackjack/Reverso.png" class="img-fluid">
+                <p class="text-center">Valor: <span id="jugador valor carta 1"></span></p>
+            </div>
+
+            <div id="jugador carta 2" class="col-auto">
+                <img id="jugador imagen carta 2" src="/images/Juegos/Blackjack/Reverso.png" class="img-fluid">
+                <p class="text-center">Valor: <span id="jugador valor carta 2"></span></p>
+            </div>
+
+        </div>
+    </div>
+    <p>Puntos: <span id="jugador puntos">0</span></p>
+
+
+    <!-- Boton Empezar partida -->
+    <br>
+    <label for="cantidadApostada">Tu apuesta:</label>
+    <input type="number" id="cantidadApostada" name="cantidadApostada" min="1" value="10">
+    
+    <br>
+    <button id="botonEmpezarPartida" onclick="empezarPartida()">Empezar partida</button>
+
+
+    <!-- Posibles cartas -->
+    <br></br>
+    <h3 style="text-align: center;">Posibles cartas</h3>
+    <img src="/images/Juegos/Blackjack/A.png" class="img-fluid">
+    <img src="/images/Juegos/Blackjack/2.png" class="img-fluid">
+    <img src="/images/Juegos/Blackjack/3.png" class="img-fluid">
+    <img src="/images/Juegos/Blackjack/4.png" class="img-fluid">
+    <img src="/images/Juegos/Blackjack/5.png" class="img-fluid">
+    <img src="/images/Juegos/Blackjack/6.png" class="img-fluid">
+    <img src="/images/Juegos/Blackjack/7.png" class="img-fluid">
+    <img src="/images/Juegos/Blackjack/8.png" class="img-fluid">
+    <img src="/images/Juegos/Blackjack/9.png" class="img-fluid">
+    <img src="/images/Juegos/Blackjack/10.png" class="img-fluid">
+    <img src="/images/Juegos/Blackjack/J.png" class="img-fluid">
+    <img src="/images/Juegos/Blackjack/Q.png" class="img-fluid">
+    <img src="/images/Juegos/Blackjack/K.png" class="img-fluid">
+
+
+    <!-- Reglas -->
+    <br></br>
+    <h3 style="text-align: center;">Reglas</h3>
+    <p>Objetivo del juego: </p>
+
+    <p>* El objetivo es conseguir una mano con un valor total lo más cercano posible a 21, sin pasarse. 
+    Si te pasas de 21, pierdes automáticamente.</p>
+
+    <p>Valor de las cartas:</p>
+
+    <p>* Las cartas del 2 al 10 tienen su valor nominal.</p>
+    <p>* Las cartas con figuras (J, Q, K) valen 10 puntos cada una.</p>
+    <p>* El As puede valer 1 o 11 puntos, según convenga más a tu mano. Si te pasas de 21 puntos y el As valía 11, el As se convierte automáticamente en 1 </p>
+
+    <p>El reparto: </p>
+    
+    <p>* Cada jugador recibe dos cartas y el crupier también recibe dos cartas, una de ellas boca arriba y
+    la otra boca abajo.</p>
+
+    <p>Opciones de juego:</p>
+
+    <p>* Pedir: Solicitar una carta adicional.</p>
+    <p>* Plantarse: Mantener tu mano actual y no pedir más cartas.</p>
+    <p>* Doblar: Duplicar tu apuesta inicial y recibir una sola carta más. (SIN IMPLEMENTAR )</p> 
+    <p>* Dividir: Si las dos primeras cartas tienen el mismo valor, puedes dividirlas en dos manos 
+    separadas, cada una con una apuesta adicional. (SIN IMPLEMENTAR) </p>
+    <p>* Rendirse: Retirarte de la mano perdiendo solo la mitad de tu apuesta. (SIN IMPLEMENTAR)</p>
+
+    <p>El juego del crupier: </p>
+
+    <p>* El crupier debe pedir cartas hasta alcanzar un total de al menos 17 puntos.</p> 
+    <p>* Si el crupier se pasa de 21, todos los jugadores que no se han pasado ganan.</p>
+
+    <p>Pagos:</p>
+
+    <p>* Si consigues un Blackjack (una carta de 10 puntos y un As) con tus dos primeras cartas, se paga 3 a 2.</p>
+    <p>* Si tu mano gana a la del crupier sin pasarte de 21, se paga 1 a 1.</p>
+    <p>* Si empatas con el crupier, recuperas tu apuesta.</p>
+
+</div>
+
+<script src="/js/juegos/blackjackCliente.js"></script>

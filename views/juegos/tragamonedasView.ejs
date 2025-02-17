@@ -1,0 +1,118 @@
+<style>
+    /*
+    .slot {
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        opacity: 1;
+    }
+
+    .hidden {
+        opacity: 0;
+    }
+    */
+</style>
+
+
+<div class="container">
+
+    <!-- FILA ARRIBA -->
+    <div id="filaArriba" class="row">
+
+        <div class="col-md-3"></div>
+
+        <div id="filaArriba slot 1 div" class="col-md-2" style="border: 1px solid black; background-color: rgb(0, 204, 255);">
+            <img id="filaArriba slot 1 img" src="/images/Juegos/Tragamonedas/sandia.png" class="img-fluid">
+        </div>
+        
+        <div id="filaArriba slot 2 div" class="col-md-2" style="border: 1px solid black; background-color: rgb(0, 204, 255);">
+            <img id="filaArriba slot 2 img" src="/images/Juegos/Tragamonedas/7.png" class="img-fluid">
+        </div>
+
+        <div id="filaArriba slot 3 div" class="col-md-2" style="border: 1px solid black; background-color: rgb(0, 204, 255);">
+            <img id="filaArriba slot 3 img" src="/images/Juegos/Tragamonedas/limon.png" class="img-fluid">
+        </div>
+
+        <div class="col-md-3"></div>
+
+    </div>
+
+    <!-- FILA MEDIO -->
+    <div id="filaMedio" class="row">
+
+        <div class="col-md-3"></div>
+
+        <div id="filaMedio slot 1 div" class="col-md-2" style="border: 1px solid black; background-color: yellow;">
+            <img id="filaMedio slot 1 img" src="/images/Juegos/Tragamonedas/campana.png" class="img-fluid">
+            <!-- <img id="aux slot 1" class="img-fluid slot hidden"> -->
+        </div>
+        
+        <div id="filaMedio slot 2 div" class="col-md-2" style="border: 1px solid black; background-color: yellow;">
+            <img id="filaMedio slot 2 img" src="/images/Juegos/Tragamonedas/limon.png" class="img-fluid">
+            <!-- <img id="aux slot 2" class="img-fluid slot hidden"> -->
+        </div>
+
+        <div id="filaMedio slot 3 div" class="col-md-2" style="border: 1px solid black; background-color: yellow;">
+            <img id="filaMedio slot 3 img" src="/images/Juegos/Tragamonedas/diamante.png" class="img-fluid">
+            <!-- <img id="aux slot 3" class="img-fluid slot hidden"> -->
+        </div>
+
+        <div class="col-md-3"></div>
+
+    </div>
+
+
+    <!-- FILA ABAJO -->
+    <div id="filaAbajo" class="row">
+
+        <div class="col-md-3"></div>
+
+        <div id="filaAbajo slot 1 div" class="col-md-2" style="border: 1px solid black; background-color: rgb(0, 204, 255);">
+            <img id="filaAbajo slot 1 img" src="/images/Juegos/Tragamonedas/cereza.png" class="img-fluid">
+        </div>
+        
+        <div id="filaAbajo slot 2 div" class="col-md-2" style="border: 1px solid black; background-color: rgb(0, 204, 255);">
+            <img id="filaAbajo slot 2 img" src="/images/Juegos/Tragamonedas/bar.jpg" class="img-fluid">
+        </div>
+
+        <div id="filaAbajo slot 3 div" class="col-md-2" style="border: 1px solid black; background-color: rgb(0, 204, 255);">
+            <img id="filaAbajo slot 3 img" src="/images/Juegos/Tragamonedas/campana.png" class="img-fluid">
+        </div>
+
+        <div class="col-md-3"></div>
+
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <button onclick="jugarTragamonedas()" class="btn btn-primary mt-3">
+                JUGAR 5 
+                <img src="/images/Estilos/fichas.png" alt="fichas" class="bi" style="width: 30px; height: 30px;">
+            </button>
+        </div>
+    </div>
+
+
+    <div class="container mt-4">
+        <div class="row">
+
+            <div class="col-md-6">
+                <h3>Probabilidades de cada slot:</h3>
+                <p>Cereza, limon, sandia = 60%</p>
+                <p>Bar, campana = 30%</p>
+                <p>Diamante, 7 = 10%</p>
+            </div>
+
+            <div class="col-md-6">
+                <h3>Premios</h3>
+                <p>Cereza, limon, sandia = 50 monedas</p>
+                <p>Bar, campana = 300 monedas</p>
+                <p>Diamante, 7 = 1000 monedas</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<script src="/js/juegos/tragamonedasCliente.js"></script>

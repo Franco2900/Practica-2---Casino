@@ -1,0 +1,38 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col-md-3 {
+    flex: 0 0 23%;
+    max-width: 23%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.ficha-icon {
+    width: 50px;
+    height: 50px;
+}

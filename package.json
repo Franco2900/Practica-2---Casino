@@ -1,0 +1,24 @@
+{
+  "description": "Este es un proyecto de practica con backend NodeJS y base de datos con MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "NodeJS",
+    "MongoDB"
+  ],
+  "author": "franco <franco2900@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "mongodb": "^6.12.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.9"
+  }
+}
