@@ -44,8 +44,10 @@ async function postCambiarImagen(req, res)
 
     const nombreViejaImagen = req.session.imagenPerfil;
     const lugarGuardadoFisicoViejaImagen = path.join(__dirname, '../public/images/Perfil', nombreViejaImagen);
-    const nombreNuevaImagen = obtenerNombreDeArchivo() + req.file.originalname;
+    
+    const nombreNuevaImagen = obtenerNombreDeArchivo(req.file.originalnames);
     const lugarGuardadoFisicoNuevaImagen = path.join(__dirname, '../public/images/Perfil', nombreNuevaImagen);
+    
     const imagenBuffer = req.file.buffer;
 
     try 

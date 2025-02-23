@@ -5,7 +5,7 @@ function autentificar(req, res, next)
     else                                   res.redirect('/login');   
 }
 
-function obtenerNombreDeArchivo()
+function obtenerNombreDeArchivo(nombreOriginal)
 {
     const fecha = new Date();
     const año = fecha.getFullYear();
@@ -15,7 +15,7 @@ function obtenerNombreDeArchivo()
     const minutos = ('0' + fecha.getMinutes()).slice(-2);
     const segundos = ('0' + fecha.getSeconds()).slice(-2);
 
-    return `${año}${mes}${dia}_${horas}${minutos}${segundos}_`; 
+    return `${año}${mes}${dia}_${horas}${minutos}${segundos}_${nombreOriginal}`; 
 };
 
 module.exports = { 
